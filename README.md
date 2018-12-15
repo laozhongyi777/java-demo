@@ -1,14 +1,11 @@
 # java-demo
 
 #### ci/cd 架构图
-
-![picture/1.png]()
+![Alt text](picture/1.png)
 
 #### java 发布流水线
 
-
-
-![picture/2.png]()
+![Alt text](picture/2.png)
 
 
 
