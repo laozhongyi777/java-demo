@@ -2,13 +2,13 @@
 
 #### ci/cd 架构图
 
-![https://github.com/laozhongyi777/java-demo/blob/master/picture/1.png]()
+![picture/1.png]()
 
 #### java 发布流水线
 
 
 
-![https://github.com/laozhongyi777/java-demo/blob/master/picture/2.png]()
+![picture/2.png]()
 
 
 
