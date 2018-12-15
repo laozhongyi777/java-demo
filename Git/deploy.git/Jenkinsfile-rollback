@@ -1,0 +1,25 @@
+podTemplate(label: 'jnlp-slave', cloud: 'kubernetes', containers: [
+    containerTemplate(
+        name: 'jnlp', 
+        image: '10.206.240.188/ops/jenkins-slave:rollback', 
+        alwaysPullImage: true 
+    ),
+  ],
+  volumes: [
+    hostPathVolume(mountPath: '/usr/local/jdk', hostPath: '/usr/local/jdk'),
+  ],
+  imagePullSecrets: ['registry-pull-secret'],
+) 
+{
+    node("jnlp-slave"){
+        stage('Roll-back'){
+            sh '''
+            mkdir /home/jenkins/.kube && mv /tmp/config /home/jenkins/.kube
+            kubectl rollout undo deployment/${Project_Name} -n ${Namespace}
+            '''
+        }
+        stage('Auto Testing'){
+            echo "Auto Testing..."
+        }
+    }
+}

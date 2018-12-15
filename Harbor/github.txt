@@ -1,0 +1,9 @@
+github  地址  https://github.com/goharbor/harbor
+
+
+wget https://storage.googleapis.com/harbor-releases/harbor-offline-installer-v1.5.2.tgz
+
+主要通过 harbor.cfg docker-compose.yaml   根据实际需求更改配置  
+
+
+docker-compose 用来管理
