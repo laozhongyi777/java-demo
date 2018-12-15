@@ -2,7 +2,7 @@
 
 #### ci/cd 架构图
 
-![架构图](E:\Users\root\Desktop\homework-基于开源java项目的solo\架构图.png)
+![1](../picture/1.png)
 
 
 
@@ -10,7 +10,7 @@
 
 #### java 发布流水线
 
-![1544860300410](C:\Users\root\AppData\Roaming\Typora\typora-user-images\1544860300410.png)
+![2](../picture/2.png)
 
 #### devops各个环节：
 
